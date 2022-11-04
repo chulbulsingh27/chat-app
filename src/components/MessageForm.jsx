@@ -3,7 +3,7 @@ import { SendOutlined, PictureOutlined } from '@ant-design/icons';
 import { sendMessage, isTyping } from 'react-chat-engine';
 
 const MessageForm = (props) => {
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState('');// we have value and setvalue which is equal to empty string
     const { chatId, creds } = props;
 
     const handleChange = (event) => {
