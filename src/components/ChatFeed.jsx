@@ -4,6 +4,7 @@ import MessageForm from './MessageForm';
 
 const ChatFeed = (props) => {
     const { chats, activeChat, userName, messages } = props;
+    // current chat 
 
     const chat = chats && chats[activeChat];
 
@@ -19,7 +20,7 @@ const ChatFeed = (props) => {
             />
         ));
     }
-
+   // rendering all of my messages keys are id of specfic messages
     const renderMessages = () => {
         const keys = Object.keys(messages);
 
