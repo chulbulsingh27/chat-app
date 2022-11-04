@@ -1,4 +1,5 @@
 const MyMessage = ({ message }) => {
+    // if messages is in form of images
     if (message.attachments && message.attachments.length > 0) {
         return (
             <img
@@ -11,6 +12,7 @@ const MyMessage = ({ message }) => {
     }
 
     return (
+        // rendering a text
         <div className="message" style={{ float: 'right', marginRight: '18px', color: 'white', backgroundColor: '#3B2A50' }}>
             {message.text}
         </div>
